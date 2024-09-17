@@ -6,17 +6,33 @@
     <title>AI BLOG GENERATOR</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="flex flex-co min-h-scrren bg-gray-100 font-sans antalised">
-    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+<body class="flex flex-col min-h-screen bg-gray-100 font-sans antialiased">
+    <nav class="bg-blue-600 p-4 text-white flex justify-between w-full">
         <div>
             <h1 class="text-3xl font-bold">AI BLOG GENERATOR</h1>
         </div> 
         <div>
-            <a href="#" class="text-white hover:underline">LogOut </a>
+            <a href="#" class="text-white hover:underline">LogOut</a>
         </div>  
     </nav>
-    <div>
-        
+    
+    <div class="flex-grow container mx-auto mt-10 px-4 sm:px-0 flex items-center justify-center">
+        <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 flex flex-col">
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Welcome to AI Blog Generator</h2>
+                <p class="text-gray-700">Generate high-quality blog articles from Youtube videos using Artificial Intelligence.Simply enter the link to the Youtube video below and let AI create content for you!</p>
+            </div>
+
+            <br>
+
+
+            <div>
+                <h2 class="text-xl mb-4 font-semibold">Enter YouTube link.</h2>
+                <div class="flex space-x-4">
+                    <input id="youtube link" type="url" placeholder="Paste Youtube Link..." class="flex-grow p-2 border-blue-400">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
