@@ -20,7 +20,7 @@ from django.shortcuts import redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog_generator.urls')),  # Include your app URLs
+    path('', include('blog_generator.urls')),  # Include your app URLs
     path('', lambda request: redirect('blog/')),    # Redirect root to /blog/
 ]
 
