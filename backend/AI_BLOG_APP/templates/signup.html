@@ -24,6 +24,16 @@
 
             <!-- Login form -->
             <form class="space-y-4" action="" method="POST">
+                {% csrf_token %}
+
+                {%if error_message%}
+
+                <div align="center" style="color:red;">
+                    <h2>
+                        {{error_message}}
+                    </h2>
+                </div>
+                {% endif %}
 
                 <h2 class="text-xl font-semibold">SignUp</h2>
                 <div>
